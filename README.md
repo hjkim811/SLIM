@@ -6,10 +6,10 @@ You can download the models via Hugging Face or Google Drive.
 ### Hugging Face
 Use the following code to load one of the models listed below.
 ```python
-from transformers import AutoTokenizer, AutoModelForMaskedLM
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 tokenizer = AutoTokenizer.from_pretrained("hjkim811/SLIM-W_polar")
-model = AutoModelForMaskedLM.from_pretrained("hjkim811/SLIM-W_polar")
+model = AutoModelForSequenceClassification.from_pretrained("hjkim811/SLIM-W_polar")
 ```
 - `SLIM-C_boolean`: https://huggingface.co/hjkim811/SLIM-C_boolean
 - `SLIM-C_mixed`: https://huggingface.co/hjkim811/SLIM-C_mixed
